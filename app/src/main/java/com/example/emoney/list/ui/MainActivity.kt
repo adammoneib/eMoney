@@ -3,6 +3,7 @@ package com.example.emoney.list.ui
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.emoney.converter.DetailsActivity
 import com.example.emoney.databinding.ActivityMainBinding
 import com.example.emoney.list.domain.CurrencyRates
 import com.example.emoney.list.ui.adapter.CurrencyListAdapter
@@ -53,6 +54,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun openDetails(rate: CurrencyRates) {
-
+        startActivity(DetailsActivity.getIntent(this, rate))
     }
 }

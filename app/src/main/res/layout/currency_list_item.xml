@@ -4,6 +4,12 @@
     android:layout_height="50dp"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/black"
+        android:layout_gravity="top"/>
+
     <TextView
         android:id="@+id/currencyName"
         android:layout_width="wrap_content"
